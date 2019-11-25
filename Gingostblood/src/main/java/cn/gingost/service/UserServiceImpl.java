@@ -1,6 +1,6 @@
 package cn.gingost.service;
 
-import java.util.List;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,6 +17,12 @@ public class UserServiceImpl implements UserService {
 	public User findOne(User user) {
 		// TODO Auto-generated method stub
 		return userMapper.findOne(user);
+	}
+
+	@Override
+	public void addOne(User user) {
+		// TODO Auto-generated method stub
+		userMapper.addOne(user);
 	}
 
 }

@@ -5,4 +5,7 @@
 <select id="findOne" resultType="cn.gingost.pojo.User">
 select * from user where username=#{username} and userpwd=#{userpwd}
 </select>
+<update id="addOne">
+insert into user values (null,#{username},#{userpwd},#{userphone},#{useremail},#{question},#{answer})
+</update>
 </mapper>

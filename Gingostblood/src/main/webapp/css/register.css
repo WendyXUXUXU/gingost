@@ -23,7 +23,7 @@
 }
 
 #middle form {
-	width: 400px;
+	width: 380px;
 	height: 600px;
 	background: cyan;
 	background: white;
@@ -36,12 +36,18 @@
 	font-weight: 800;
 	text-indent: 30px;
 }
+#middle #msg{
+	padding-left: 30px;
+	font-size: 16px;
+	/* text-indent: 15px; */
+	color: red;
+}
 #middle .alertmsg{
 	padding-left:30px;
-	font-size: 10px;
-	color: red;
+	font-size: 8px;
 	line-height: 10px;
 	height: 10px;
+	color: #6c6c6c6;
 }
 #middle form table tr td input{
 	margin-left:30px;
@@ -74,26 +80,26 @@
 	text-align: center;
 	text-indent: 20px;
 }
-#middle form table tr td input[name='name']{
+#middle form table tr td input[name='username']{
 	background: url("../img/用户头像.png") no-repeat;
 }
-#middle form table tr td input[name='pwd']{
+#middle form table tr td input[name='userpwd']{
 	background: url("../img/锁.png") no-repeat;
 }
 #middle form table tr td input[name='repwd']{
 	background: url("../img/锁.png") no-repeat;
 }
-#middle form table tr td input[name='email']{
+#middle form table tr td input[name='useremail']{
 	background: url("../img/电子邮件.png") no-repeat;
 }
 #middle form table tr td input[name='question']{
 	background: url("../img/问题.png") no-repeat;
 }
-#middle form table tr td input[name='name']{
-	background: url("../img/用户头像.png") no-repeat;
+#middle form table tr td input[name='answer']{
+	background: url("../img/答案.png") no-repeat;
 }
-#middle form table tr td input[name='name']{
-	background: url("../img/用户头像.png") no-repeat;
+#middle form table tr td input[name='userphone']{
+	background: url("../img/手机.png") no-repeat;
 }
 
 #down {

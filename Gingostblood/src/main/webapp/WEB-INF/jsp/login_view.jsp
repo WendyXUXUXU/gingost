@@ -42,7 +42,7 @@
 					<td id="space2"></td>
 				</tr>
 				<tr>
-					<td><a href="#">忘记密码</a>&emsp;<a href="#">还没有账号？点此注册</a></td>
+					<td><a href="#">忘记密码</a>&emsp;<a href="reg_view">还没有账号？点此注册</a></td>
 				</tr>
 			</table>
 		</form>

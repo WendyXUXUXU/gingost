@@ -13,7 +13,7 @@
 <body>
 <div id="head">
 			<a href="login_view" name="login">亲,请登录 </a> 
-			<a href="register" name="reg">免费注册</a>
+			<a href="reg_view" name="register">免费注册</a>
 			<%
 			Date d=new Date();
 			SimpleDateFormat sdf=new SimpleDateFormat("yyyy年MM月dd日");

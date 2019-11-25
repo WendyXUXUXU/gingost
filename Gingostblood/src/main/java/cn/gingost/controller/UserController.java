@@ -1,6 +1,6 @@
 package cn.gingost.controller;
 
-import java.util.List;
+
 
 import javax.servlet.http.HttpSession;
 
@@ -27,5 +27,10 @@ public class UserController {
 			return "main_login";
 		}else
 			return "login_view";
+	}
+	@RequestMapping("/register")
+	public String  register(User user) {
+		userService.addOne(user);
+		return "login_view";
 	}
 }
