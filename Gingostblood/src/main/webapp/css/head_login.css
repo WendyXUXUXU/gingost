@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+div {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+hr {
+	width: 1200px;
+}
+
+#head {
+	width: 1200px;
+	height: 40px;
+	line-height: 40px;
+	/* 	background: red; */
+}
+
+#head a {
+	font-size: 18px;
+	color: #6C6C6C;
+	text-decoration: none;
+}
+
+#head a[name='showname'] {
+	color: #F22E00;
+}
+
+#head a[name='lost'] {
+	margin-left: 7px;
+	color: #6C6C6C;
+}
+
+#head a[name='main'] {
+	/* text-indent:15px; */
+	/* margin-left:100px; */
+	color: #6C6C6C;
+}
+
+#head #head_time {
+	font-size: 18px;
+	color: #6C6C6C;
+	text-align: center;
+	margin-left: 100px;
+	width: 500px;
+	display: inline-block;
+	/* background: cyan; */
+}
