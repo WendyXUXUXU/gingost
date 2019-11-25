@@ -42,7 +42,7 @@
 	text-indent: 30px;
 }
 
-#middle .alertmsg {
+#middle #alertmsg {
 	padding-left: 30px;
 	font-size: 16px;
 	/* text-indent: 15px; */
@@ -67,11 +67,11 @@
 	border: 1px solid #dbdbdb;
 }
 
-#middle form table tr td input[name='name'] {
+#middle form table tr td input[name='username'] {
 	background: url("../img/用户头像.png") no-repeat;
 }
 
-#middle form table tr td input[name="pwd"] {
+#middle form table tr td input[name="userpwd"] {
 	background: url("../img/锁.png") no-repeat;
 }
 

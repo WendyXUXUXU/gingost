@@ -1,23 +1,59 @@
 package cn.gingost.pojo;
 
 public class User {
-	private String name;
-	private String pwd;
-	public String getName() {
-		return name;
+	private int id;
+	private String username;
+	private String userpwd;
+	private long userphone;
+	private String useremail;
+	private String question;
+	private String answer;
+	public int getId() {
+		return id;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setId(int id) {
+		this.id = id;
 	}
-	public String getPwd() {
-		return pwd;
+	public String getUsername() {
+		return username;
 	}
-	public void setPwd(String pwd) {
-		this.pwd = pwd;
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getUserpwd() {
+		return userpwd;
+	}
+	public void setUserpwd(String userpwd) {
+		this.userpwd = userpwd;
+	}
+	public long getUserphone() {
+		return userphone;
+	}
+	public void setUserphone(long userphone) {
+		this.userphone = userphone;
+	}
+	public String getUseremail() {
+		return useremail;
+	}
+	public void setUseremail(String useremail) {
+		this.useremail = useremail;
+	}
+	public String getQuestion() {
+		return question;
+	}
+	public void setQuestion(String question) {
+		this.question = question;
+	}
+	public String getAnswer() {
+		return answer;
+	}
+	public void setAnswer(String answer) {
+		this.answer = answer;
 	}
 	@Override
 	public String toString() {
-		return "User [name=" + name + ", pwd=" + pwd + "]";
+		return "User [id=" + id + ", username=" + username + ", userpwd=" + userpwd + ", userphone=" + userphone
+				+ ", useremail=" + useremail + ", question=" + question + ", answer=" + answer + "]";
 	}
 	
 }

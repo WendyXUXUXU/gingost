@@ -12,10 +12,11 @@ import cn.gingost.pojo.User;
 public class UserServiceImpl implements UserService {
 	@Autowired
 	private UserMapper userMapper;
+
 	@Override
-	public List<User> findAll() {
+	public User findOne(User user) {
 		// TODO Auto-generated method stub
-		return userMapper.findAll();
+		return userMapper.findOne(user);
 	}
 
 }

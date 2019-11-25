@@ -12,7 +12,7 @@
 </head>
 <body>
 <div id="head">
-			<a href="login" name="login">亲,请登录 </a> 
+			<a href="login_view" name="login">亲,请登录 </a> 
 			<a href="register" name="reg">免费注册</a>
 			<%
 			Date d=new Date();
