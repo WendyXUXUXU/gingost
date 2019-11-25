@@ -1,0 +1,9 @@
+/*
+*@Gingost/Lezzy
+*Gingostblood项目简介
+*基于SSM框架的模拟购物商城搭建
+*预计使用的技术栈：MySQL，JS，JQ，SSM，Tomcat，Maven，AJax，
+*开发环境：Eclipse2019-09，JDK8，MySQL5.5，Tomcat8.0，Maven3.5.3 Spring5.3.5
+*功能：模拟用户行为 主要有登录注册模块，购物车模块，订单模块，地址模块，用户信息模块，评价模块，支付模块（简单模拟），商品模块
+*i hate css
+*/

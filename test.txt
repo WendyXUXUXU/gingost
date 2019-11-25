@@ -1,5 +1,8 @@
-﻿just do it 
-hello world java
-add this txt
-nmsl
-我带你们打
+﻿This is frist for me to study how 2 use the github
+just make a simple test
+git add
+git status
+git commit -m 
+git push origin master
+git clone myssh_address
+^_^
