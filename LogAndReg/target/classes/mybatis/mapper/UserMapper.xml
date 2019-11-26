@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.gingost.dao.UserMapper">
+	<select id="findOne" resultType="cn.gingost.pojo.User">
+		select * from user where
+		username=#{username} and userpwd=#{userpwd}
+	</select>
+
+	<update id="addOne">
+		insert into user values(#{username},#{userpwd})
+	</update>
+	<select id="checkReg" resultType="cn.gingost.pojo.User">
+		select * from user where username=#{username}
+	</select>
+</mapper>
