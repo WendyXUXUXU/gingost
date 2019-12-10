@@ -1,0 +1,79 @@
+@charset "UTF-8";
+#head {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	height: 80px;
+	background: #0099FF;
+	text-indent: 50px;
+	font-size: 30px;
+	line-height: 80px;
+	text-spacing: 10px;
+	font-weight: 300;
+	color: white;
+	letter-spacing: 5px;
+}
+
+#main {
+	width: 1200px;
+	height: 600px;
+	/* background: cyan; */
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#formtable {
+	background:white;
+	width: 400px;
+	height: 430px;
+	/* background: red; */
+	padding-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input {
+	margin-left: 30px;
+	font-size: 18px;
+	width: 300px;
+	height: 40px;
+	text-indent: 50px;
+	color: #999;
+	border: 1px solid #dbdbdb;
+}
+
+#alertmsg {
+	padding-left: 30px;
+	font-size: 16px;
+	/* text-indent: 15px; */
+	color: red;
+}
+
+#space {
+	height: 30px;
+}
+
+input[name='btn1'] {
+	text-indent: 5px;
+	width: 80px;
+	height: 50px;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	background: #0066FF;
+	color: #fff;
+	text-align: center;
+}
+
+#btnstyle {
+	text-align: center;
+}
+
+#step {
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	font-weight: 800;
+	text-indent: 30px;
+}

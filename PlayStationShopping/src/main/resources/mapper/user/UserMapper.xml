@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.gingost.dao.UserDao">
+<select id="checkReg" resultType="cn.gingost.pojo.User">
+begin
+select id from user where username=#{username};
+select id from user where useremail=#{useremail};
+select id from user where userphone=#{userphone};
+end;
+</select>
+	<update id="addOne" parameterType="cn.gingost.pojo.User">
+		insert into user
+		values(null,#{username},#{userpwd},#{userphone},#{useremail},#{question},#{answer})
+	</update>
+</mapper>

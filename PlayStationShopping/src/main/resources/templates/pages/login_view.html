@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>用户登录</title>
+<link rel="stylesheet"  href="css/login.css">
+<script src="JQuery/jquery-1.8.3.js"></script>
+</head>
+<body>
+	<div id="head">
+		<div id="head_logo"></div>
+	</div>
+	<div id="middle">
+		<form action="user/doLogin" method="post" onsubmit="return check()">
+			<table>
+				<tr>
+					<td id="logmsg">用户登录</td>
+				</tr>
+				<tr>
+					<td id="alertmsg"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="username" id="username"
+						placeholder="请输入用户名"></td>
+				</tr>
+				<tr>
+					<td id="space"></td>
+				</tr>
+				<tr>
+					<td><input type="password" name="userpwd" id="userpwd"
+						placeholder="请输入密码"></td>
+				</tr>
+				<tr>
+					<td id="space"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="ok" value="登录"></td>
+				</tr>
+				<tr>
+					<td id="space2"></td>
+				</tr>
+				<tr>
+					<td><a href="reset_pwd">忘记密码</a>&emsp;<a href="reg_view">还没有账号？点此注册</a></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<div id="down">
+		<hr>
+		<a href="">关于本人</a>&emsp;|&emsp; <a href="">@Lezzy</a>&emsp;|&emsp; <a
+			href="">@Gingost</a>&emsp;|&emsp; <a href="">SUSE</a>&emsp;|&emsp; <a
+			href="">轻化工大学</a>
+		<hr>
+	</div>
+	<div id="LezzyGingost">©2019-2020&emsp;最终著作权归Gingost/Lezzy所有</div>
+</body>
+<script type="text/javascript">
+	/* 我就是要装逼用ajax,不用js */
+	function check() {
+		var flag = true;
+		var name = $("#username").val();
+		var pwd = $("#userpwd").val();
+		$.ajax({
+			type : "POST",
+			url : "user/doFindOne",
+			async : false,
+			data : {
+				"username" : name,
+				"userpwd" : pwd,
+			},
+			success : function(result) {
+				console.log(result);
+				if (result.statu == 0) {
+					$("#alertmsg").html(result.msg);
+					flag = false;
+				}
+			}
+		});
+		if (!flag) {
+			return false;
+		}
+	}
+	$("#head_logo").click(function() {
+		location.href = "main.html";
+	});
+</script>
+</html>

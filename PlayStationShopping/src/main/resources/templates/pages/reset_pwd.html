@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>重置密码</title>
+<link rel="stylesheet" href="css/reset_pwd.css" />
+<script src="JQuery/jquery-1.8.3.js"></script>
+</head>
+<body>
+	<div id="head">重置密码</div>
+
+	<div id="main">
+		<div id="formtable">
+			<form action="#" method="post" onsubmit="return next()">
+				<table>
+					<tr>
+						<td id="step">Step1</td>
+					</tr>
+					<tr>
+						<td id="alertmsg"></td>
+					</tr>
+					<tr>
+
+						<td><input type="text" name="username"
+							placeholder="请输入要找回密码的账号"></td>
+					</tr>
+					<tr>
+						<td id="space"></td>
+					</tr>
+					<tr>
+						<td id="btnstyle"><input type="submit" name="btn1"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+function next(){
+	var name=$("#username").val();
+	var flag=true;
+	$.ajax({
+		type:"POST",
+		url:"user/doRestPwd",
+		async : false,
+		data:{
+			username:name
+		},
+		success:function(result){
+			if(result.statu==0){
+				flag=false;
+				$("#alertmsg").html(result.msg);
+			}
+		}
+	})
+	if(!flag){
+		return false;
+	}
+}
+</script>
+</html>

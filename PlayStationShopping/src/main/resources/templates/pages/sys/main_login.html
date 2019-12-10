@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>首页</title>
+<script th:src="@{/JQuery/jquery-1.8.3.js}"></script>
+<link rel="stylesheet" th:href="@{/css/head_login.css}">
+</head>
+<body>
+	<div id="head">
+		<a href="#" name="showname" th:text="${'你好,'+user.username}"></a> <a href="lost" name="lost">注销</a>
+		<div id="head_time">等我加载一下</div>
+		<img 
+		    th:src="@{/img/main.png}"> <a href="#" name="main">首页</a> <img
+			th:src="@{/img/mytb.jpg}"> <a href="#" name="myinfo">我的淘宝</a> <img
+			th:src="@{/img/car.jpg}"> <a href="#" name="car">购物车</a> <img
+			th:src="@{/img/about.jpg}"> <a href="#" name="about">关于我们</a> <img
+			th:src="@{/img/navigation.png}"> <a href="#" name="navigation">网站导航</a>
+	</div>
+	<hr>
+	<div id="middle"></div>
+	<div id="down"></div>
+</body>
+<script type="text/javascript">
+	$(function() {
+		var url = "getTime";
+		$.post(url, function(result) {
+			$("#head_time").html(result);
+		});
+	})
+</script>
+</html>
